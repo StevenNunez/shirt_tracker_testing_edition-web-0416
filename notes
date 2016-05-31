@@ -1,0 +1,18 @@
+Cohort
+  Start date, end date
+  Lessons
+    title, notes
+  Shirts
+    name
+
+  As a user I shouldnt be offered a shirt if I've worn it while a cohort is happening
+  As a user I should be able to wear a shirt
+  As a user I should be to identify a potential wear activity between a shirt and a lesson
+
+
+Cohort => Lessons
+Lesson <=> Shirts join wear_opportunities
+Shirt => Wearings (Can't be worn again while cohort is happening)
+Cohort => Wearings
+
+  
